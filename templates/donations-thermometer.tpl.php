@@ -4,12 +4,14 @@
         <p><?php print $percent; ?>% </p>
       </div>
     </div>
+    <div id="donation-statistics">
     <p>
       <label><?php print t('Current:'); ?></label>
-      <span class="donations_thermometer-amount"><?php print $prefix; ?><?php print $current; ?><?php print $postfix; ?></span>
+      <span class="donations_thermometer-amount"><?php print $prefix; ?><?php print number_format($current); ?><?php print $postfix; ?></span>
     </p>
     <p>
       <label><?php print t('Goal:'); ?></label>
-      <span class="donations_thermometer-amount"><?php print $prefix; ?><?php print $goal; ?><?php print $postfix; ?></span>
+      <span class="donations_thermometer-amount"><?php print $prefix; ?><?php print number_format($goal); ?><?php print $postfix; ?></span>
     </p>
   </div>
+</div>
