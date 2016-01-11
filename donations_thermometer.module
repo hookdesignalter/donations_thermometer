@@ -106,9 +106,9 @@ function donations_thermometer_block_info() {
 
   while ($block_number <= $number_of_blocks) {
     $campaign_name = '';
-    if( !empty(variable_get('donations_thermometer_block-' . $block_number . '-campaign_name')) ){
-      $campaign_name = variable_get('donations_thermometer_block-' . $block_number . '-campaign_name');
-    }
+    // if( !empty(variable_get('donations_thermometer_block-' . $block_number . '-campaign_name')) ){
+    //   $campaign_name = variable_get('donations_thermometer_block-' . $block_number . '-campaign_name');
+    // }
 
     $blocks['donations_thermometer_block-' . $block_number] = array(
       'info' => t('Donations Thermometer: ' . $block_number . ' ' . $campaign_name),
